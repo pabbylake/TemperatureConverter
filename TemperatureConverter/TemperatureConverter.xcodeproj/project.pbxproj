@@ -18,6 +18,7 @@
 		213BDEFA18030175007EB820 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 213BDEF918030175007EB820 /* Default-568h@2x.png */; };
 		213BDEFD18030175007EB820 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213BDEFB18030175007EB820 /* MainStoryboard.storyboard */; };
 		213BDF0018030175007EB820 /* TemperatureConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213BDEFF18030175007EB820 /* TemperatureConverterViewController.m */; };
+		928BD6F61803086900437922 /* EnergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928BD6F51803086900437922 /* EnergyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		213BDEFC18030175007EB820 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		213BDEFE18030175007EB820 /* TemperatureConverterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemperatureConverterViewController.h; sourceTree = "<group>"; };
 		213BDEFF18030175007EB820 /* TemperatureConverterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemperatureConverterViewController.m; sourceTree = "<group>"; };
+		928BD6F41803086900437922 /* EnergyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnergyViewController.h; path = ../EnergyViewController.h; sourceTree = "<group>"; };
+		928BD6F51803086900437922 /* EnergyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnergyViewController.m; path = ../EnergyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		213BDEE918030174007EB820 /* TemperatureConverter */ = {
 			isa = PBXGroup;
 			children = (
+				928BD6F41803086900437922 /* EnergyViewController.h */,
+				928BD6F51803086900437922 /* EnergyViewController.m */,
 				213BDEF218030175007EB820 /* TemperatureConverterAppDelegate.h */,
 				213BDEF318030175007EB820 /* TemperatureConverterAppDelegate.m */,
 				213BDEFB18030175007EB820 /* MainStoryboard.storyboard */,
@@ -177,6 +182,7 @@
 				213BDEF018030175007EB820 /* main.m in Sources */,
 				213BDEF418030175007EB820 /* TemperatureConverterAppDelegate.m in Sources */,
 				213BDF0018030175007EB820 /* TemperatureConverterViewController.m in Sources */,
+				928BD6F61803086900437922 /* EnergyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				213BDF0518030175007EB820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
