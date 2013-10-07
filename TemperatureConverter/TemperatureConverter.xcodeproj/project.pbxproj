@@ -17,7 +17,7 @@
 		213BDEF818030175007EB820 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 213BDEF718030175007EB820 /* Default@2x.png */; };
 		213BDEFA18030175007EB820 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 213BDEF918030175007EB820 /* Default-568h@2x.png */; };
 		213BDEFD18030175007EB820 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213BDEFB18030175007EB820 /* MainStoryboard.storyboard */; };
-		213BDF0018030175007EB820 /* TemperatureConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213BDEFF18030175007EB820 /* TemperatureConverterViewController.m */; };
+		B6548921180309A1004F7656 /* LengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6548920180309A1004F7656 /* LengthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +35,8 @@
 		213BDEF718030175007EB820 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		213BDEF918030175007EB820 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		213BDEFC18030175007EB820 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		213BDEFE18030175007EB820 /* TemperatureConverterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemperatureConverterViewController.h; sourceTree = "<group>"; };
-		213BDEFF18030175007EB820 /* TemperatureConverterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemperatureConverterViewController.m; sourceTree = "<group>"; };
+		B654891F180309A1004F7656 /* LengthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LengthViewController.h; sourceTree = "<group>"; };
+		B6548920180309A1004F7656 /* LengthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LengthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 				213BDEF218030175007EB820 /* TemperatureConverterAppDelegate.h */,
 				213BDEF318030175007EB820 /* TemperatureConverterAppDelegate.m */,
 				213BDEFB18030175007EB820 /* MainStoryboard.storyboard */,
-				213BDEFE18030175007EB820 /* TemperatureConverterViewController.h */,
-				213BDEFF18030175007EB820 /* TemperatureConverterViewController.m */,
+				B654891F180309A1004F7656 /* LengthViewController.h */,
+				B6548920180309A1004F7656 /* LengthViewController.m */,
 				213BDEEA18030175007EB820 /* Supporting Files */,
 			);
 			path = TemperatureConverter;
@@ -176,7 +176,7 @@
 			files = (
 				213BDEF018030175007EB820 /* main.m in Sources */,
 				213BDEF418030175007EB820 /* TemperatureConverterAppDelegate.m in Sources */,
-				213BDF0018030175007EB820 /* TemperatureConverterViewController.m in Sources */,
+				B6548921180309A1004F7656 /* LengthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +299,7 @@
 				213BDF0518030175007EB820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
