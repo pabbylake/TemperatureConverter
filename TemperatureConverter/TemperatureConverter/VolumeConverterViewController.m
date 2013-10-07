@@ -16,7 +16,7 @@
 @synthesize Input=_Input;
 @synthesize OutputUnits=_OutputUnits;
 @synthesize InputUnits=_InputUnits;
-@synthesize Output= _Output;
+@synthesize output= _Output;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -99,6 +99,10 @@
         case 8:output=x*16; break;
         case 9: output=x; break;
     }
-    
+NSString *outputValueString = [NSString stringWithFormat:@"%f", output];
+
+self.Output.text = outputValueString;
+
+[self.Input resignFirstResponder];
 }
 @end
