@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA62D7618030B07004851F7 /* MassConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA62D7518030B07004851F7 /* MassConverterViewController.m */; };
 		213BDEE418030174007EB820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213BDEE318030174007EB820 /* UIKit.framework */; };
 		213BDEE618030174007EB820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213BDEE518030174007EB820 /* Foundation.framework */; };
 		213BDEE818030174007EB820 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213BDEE718030174007EB820 /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BA62D7418030B07004851F7 /* MassConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MassConverterViewController.h; sourceTree = "<group>"; };
+		1BA62D7518030B07004851F7 /* MassConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MassConverterViewController.m; sourceTree = "<group>"; };
 		213BDEE018030174007EB820 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213BDEE318030174007EB820 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		213BDEE518030174007EB820 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +90,8 @@
 				213BDEF318030175007EB820 /* TemperatureConverterAppDelegate.m */,
 				213BDEFB18030175007EB820 /* MainStoryboard.storyboard */,
 				213BDEFE18030175007EB820 /* TemperatureConverterViewController.h */,
+				1BA62D7418030B07004851F7 /* MassConverterViewController.h */,
+				1BA62D7518030B07004851F7 /* MassConverterViewController.m */,
 				213BDEFF18030175007EB820 /* TemperatureConverterViewController.m */,
 				213BDEEA18030175007EB820 /* Supporting Files */,
 			);
@@ -177,6 +182,7 @@
 				213BDEF018030175007EB820 /* main.m in Sources */,
 				213BDEF418030175007EB820 /* TemperatureConverterAppDelegate.m in Sources */,
 				213BDF0018030175007EB820 /* TemperatureConverterViewController.m in Sources */,
+				1BA62D7618030B07004851F7 /* MassConverterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				213BDF0518030175007EB820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

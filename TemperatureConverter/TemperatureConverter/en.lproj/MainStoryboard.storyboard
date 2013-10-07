@@ -1,21 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Temperature Converter View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="TemperatureConverterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Mass Converter View Controller-->
+        <scene sceneID="3la-c8-me3">
+            <objects>
+                <viewController id="PpM-Wp-stT" customClass="MassConverterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUX-jr-gkE">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="91w-ge-hHC">
+                                <rect key="frame" x="20" y="91" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="g"/>
+                                    <segment title="Kg"/>
+                                    <segment title="oz"/>
+                                    <segment title="lb"/>
+                                </segments>
+                                <connections>
+                                    <action selector="convert:" destination="PpM-Wp-stT" eventType="valueChanged" id="ZY2-fi-d8h"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eA4-cH-dlk">
+                                <rect key="frame" x="20" y="154" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="g"/>
+                                    <segment title="Kg"/>
+                                    <segment title="oz"/>
+                                    <segment title="lb"/>
+                                </segments>
+                                <connections>
+                                    <action selector="convert:" destination="PpM-Wp-stT" eventType="valueChanged" id="E0r-kw-JlR"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLC-br-kPd">
+                                <rect key="frame" x="112" y="49" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Mxo-ET-jKs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="convert:" destination="PpM-Wp-stT" eventType="valueChanged" id="MYk-Ht-pHu"/>
+                                    <action selector="convert:" destination="PpM-Wp-stT" eventType="editingChanged" id="uWF-sv-7DL"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b08-h0-v8c">
+                                <rect key="frame" x="33" y="210" width="255" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="9ii-An-pJM"/>
+                                    <constraint firstAttribute="height" constant="43" id="T58-M5-YcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass Converter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmK-AZ-d33">
+                                <rect key="frame" x="99" y="20" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BmK-AZ-d33" firstAttribute="top" secondItem="PUX-jr-gkE" secondAttribute="top" constant="20" symbolic="YES" type="default" id="5i1-Tx-Bfz"/>
+                            <constraint firstItem="eA4-cH-dlk" firstAttribute="trailing" secondItem="91w-ge-hHC" secondAttribute="trailing" type="default" id="8vW-Sd-PFg"/>
+                            <constraint firstItem="pLC-br-kPd" firstAttribute="top" secondItem="BmK-AZ-d33" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Bdh-PY-1TD"/>
+                            <constraint firstItem="91w-ge-hHC" firstAttribute="centerX" secondItem="pLC-br-kPd" secondAttribute="centerX" type="default" id="NY8-7x-5R9"/>
+                            <constraint firstItem="b08-h0-v8c" firstAttribute="centerX" secondItem="eA4-cH-dlk" secondAttribute="centerX" type="default" id="OnZ-Ix-vkc"/>
+                            <constraint firstAttribute="trailing" secondItem="91w-ge-hHC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SnU-4T-aJA"/>
+                            <constraint firstItem="eA4-cH-dlk" firstAttribute="top" secondItem="PUX-jr-gkE" secondAttribute="top" constant="154" id="ZXG-de-Pon"/>
+                            <constraint firstItem="91w-ge-hHC" firstAttribute="top" secondItem="PUX-jr-gkE" secondAttribute="top" constant="91" id="fzd-oV-16H"/>
+                            <constraint firstItem="91w-ge-hHC" firstAttribute="leading" secondItem="PUX-jr-gkE" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="grd-P2-rNB"/>
+                            <constraint firstItem="91w-ge-hHC" firstAttribute="leading" secondItem="eA4-cH-dlk" secondAttribute="leading" type="default" id="qEa-tg-WEX"/>
+                            <constraint firstItem="BmK-AZ-d33" firstAttribute="centerX" secondItem="pLC-br-kPd" secondAttribute="centerX" type="default" id="rat-zr-HKe"/>
+                            <constraint firstItem="b08-h0-v8c" firstAttribute="top" secondItem="PUX-jr-gkE" secondAttribute="top" constant="210" id="wiS-n5-Acm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputSegControl" destination="91w-ge-hHC" id="gxf-Zu-WCe"/>
+                        <outlet property="inputTF" destination="pLC-br-kPd" id="WSW-ha-OLC"/>
+                        <outlet property="outputLabel" destination="b08-h0-v8c" id="tIM-Bz-rS4"/>
+                        <outlet property="outputSegControl" destination="eA4-cH-dlk" id="Ijb-as-N9y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k73-3H-XSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="46"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
