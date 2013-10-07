@@ -16,6 +16,7 @@
 @synthesize Input=_Input;
 @synthesize OutputUnits=_OutputUnits;
 @synthesize InputUnits=_InputUnits;
+@synthesize Output= _Output;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -89,8 +90,15 @@
     double output=0.0;
     switch(z)
     { case 1:output=x;break;
-        case 2:; break;
-            
+        case 2:output=x*4.22675; break;
+        case 3:output=x*3.78541; break;
+        case 4: output=x/4.22675;break;
+        case 5:output=x; break;
+        case 6: output=x/16; break;
+        case 7:output=x/3.78541;break;
+        case 8:output=x*16; break;
+        case 9: output=x; break;
     }
+    
 }
 @end
