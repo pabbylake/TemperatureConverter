@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="width" constant="97" id="7vp-5R-QX9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Output" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ly-l4-RGh">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -72,21 +72,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pFW-i6-iEG" firstAttribute="trailing" secondItem="GV2-46-etL" secondAttribute="trailing" type="default" id="19q-Qe-39c"/>
+                            <constraint firstItem="07M-j5-u0t" firstAttribute="top" secondItem="hOt-XB-Cd7" secondAttribute="top" constant="156" id="46D-R3-9fm"/>
                             <constraint firstItem="kED-pa-bZm" firstAttribute="centerX" secondItem="GV2-46-etL" secondAttribute="centerX" type="default" id="Evf-O9-zkI"/>
                             <constraint firstAttribute="bottom" secondItem="pFW-i6-iEG" secondAttribute="bottom" constant="111" id="GBc-wc-XdI"/>
+                            <constraint firstItem="07M-j5-u0t" firstAttribute="centerX" secondItem="GV2-46-etL" secondAttribute="centerX" type="default" id="K5c-wY-Jb6"/>
                             <constraint firstItem="0Ly-l4-RGh" firstAttribute="centerX" secondItem="pFW-i6-iEG" secondAttribute="centerX" type="default" id="NTM-0o-V7U"/>
                             <constraint firstAttribute="bottom" secondItem="0Ly-l4-RGh" secondAttribute="bottom" constant="63" id="PBK-jC-AgR"/>
-                            <constraint firstItem="0Ly-l4-RGh" firstAttribute="centerX" secondItem="hOt-XB-Cd7" secondAttribute="centerX" type="default" id="XXF-Na-aCC"/>
+                            <constraint firstItem="07M-j5-u0t" firstAttribute="centerX" secondItem="hOt-XB-Cd7" secondAttribute="centerX" type="default" id="RV3-YP-wUV"/>
                             <constraint firstItem="pFW-i6-iEG" firstAttribute="leading" secondItem="GV2-46-etL" secondAttribute="leading" type="default" id="iQe-cr-Bq5"/>
                             <constraint firstItem="kED-pa-bZm" firstAttribute="top" secondItem="hOt-XB-Cd7" secondAttribute="top" constant="30" id="jWu-Sc-o1C"/>
-                            <constraint firstItem="07M-j5-u0t" firstAttribute="top" secondItem="hOt-XB-Cd7" secondAttribute="top" constant="237" id="kqK-cJ-Lq1"/>
                             <constraint firstItem="GV2-46-etL" firstAttribute="top" secondItem="hOt-XB-Cd7" secondAttribute="top" constant="76" id="mDF-eh-8uR"/>
-                            <constraint firstItem="07M-j5-u0t" firstAttribute="centerX" secondItem="pFW-i6-iEG" secondAttribute="centerX" type="default" id="rNx-Yo-JYo"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Input" destination="kED-pa-bZm" id="IZ2-hV-3Xk"/>
                         <outlet property="InputUnits" destination="GV2-46-etL" id="GKP-Os-LXs"/>
+                        <outlet property="Output" destination="0Ly-l4-RGh" id="qiU-mZ-SAV"/>
                         <outlet property="OutputUnits" destination="pFW-i6-iEG" id="Yfy-gh-lLQ"/>
                     </connections>
                 </viewController>
@@ -108,6 +109,7 @@
                 <relationship kind="action" name="Cacluate:"/>
                 <relationship kind="outlet" name="Input" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="InputUnits" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="Output" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="OutputUnits" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>

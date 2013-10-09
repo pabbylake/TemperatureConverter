@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *InputUnits;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *OutputUnits;
 - (IBAction)Cacluate:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *Output;
 
 @end

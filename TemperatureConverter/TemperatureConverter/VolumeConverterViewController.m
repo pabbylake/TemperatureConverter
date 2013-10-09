@@ -16,7 +16,7 @@
 @synthesize Input=_Input;
 @synthesize OutputUnits=_OutputUnits;
 @synthesize InputUnits=_InputUnits;
-@synthesize output= _Output;
+@synthesize Output= _Output;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
