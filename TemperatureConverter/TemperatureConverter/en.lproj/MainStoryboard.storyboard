@@ -62,14 +62,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="OneToTwo:" destination="B1k-oQ-5Tg" eventType="editingDidEnd" id="QON-sG-r62"/>
+                                    <action selector="OneToTwo:" destination="B1k-oQ-5Tg" eventType="editingChanged" id="Dlf-Z5-DKp"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-IP-GDD">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="TwoToOne:" destination="B1k-oQ-5Tg" eventType="editingDidEnd" id="65g-x5-Sdx"/>
+                                    <action selector="TwoToOne:" destination="B1k-oQ-5Tg" eventType="editingChanged" id="ybG-Gi-3BJ"/>
                                 </connections>
                             </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUI-6c-Qqj">
